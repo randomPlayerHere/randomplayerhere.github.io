@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "homepage": "https://randomPlayerHere.github.io/Personal-Website/",
+  "homepage": "https://randomplayerhere.github.io/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,7 +11,6 @@
     "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
-
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
