@@ -3,7 +3,27 @@ const BASE_URL = import.meta.env.BASE_URL;
 export const myProjects = [
   {
     id: 1,
-    title: "Deep CNN-Based Network Intrusion Detection System",
+    title: "Datich: Mental State Analysis via Fine-Tuned Small Language Model",
+    description:
+      "A mental health text analysis tool using a Qwen2.5-0.5B model fine-tuned with LoRA adapters to score emotional dimensions and classify psychological profiles.",
+    subDescription: [
+      "Fine-tuned Qwen2.5-0.5B with LoRA (PEFT) to score six emotional dimensions — Sadness, Anxiety, Rumination, Self Focus, Hopelessness, and Emotional Volatility — from raw text input.",
+      "Integrated a pre-trained StandardScaler and KMeans clustering pipeline to classify inputs into one of four psychological profiles with confidence percentages.",
+      "Built a FastAPI backend deployed on Hugging Face Spaces (Docker) and a React/TypeScript frontend deployed on Vercel.",
+    ],
+    href: "https://github.com/randomPlayerHere/datich",
+    logo: "",
+    image: `${BASE_URL}assets/projects/datich.png`,
+    tags: [
+      { id: 1, name: "Python", path: `${BASE_URL}assets/logos/Python.svg` },
+      { id: 2, name: "React", path: `${BASE_URL}assets/logos/React.svg` },
+      { id: 3, name: "Hugging Face", path: `${BASE_URL}assets/logos/HuggingFace.svg` },
+      { id: 4, name: "FastAPI", path: `${BASE_URL}assets/logos/FastAPI.svg` },
+    ],
+  },
+  {
+    id: 2,
+    title: "Sentinel AI: Deep CNN-Based Network Intrusion Detection System",
     description:
       "A high-accuracy Deep CNN model for detecting malicious network traffic using the CICIDS2017 dataset.",
     subDescription: [
@@ -21,7 +41,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 2,
+    id: 3,
     title: "SMA Crossover Strategy Backtester",
     description:
       "A quantitative trading strategy backtester using Simple Moving Averages on historical stock data.",
@@ -42,7 +62,7 @@ export const myProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "HyprFit - AI Fitness Coach",
     description:
       "An adaptive fitness planner using clustering and rule-based personalization.",
@@ -65,6 +85,16 @@ export const myProjects = [
 
 
 export const experiences = [
+  {
+    title: "Software Development Engineer Intern",
+    job: "Teemo.ai, NYC (Remote)",
+    date: "2026 - Present",
+    contents: [
+      "Automated complex internal development workflows by building custom Python scripting tools and integrating CI/CD pipelines, reducing manual boilerplate tasks by 30% and accelerating the software development lifecycle.",
+      "Designed and developed robust, scalable RESTful APIs utilizing Agile methodologies, achieving 90%+ code coverage through comprehensive automated testing and increasing deployment efficiency by 25%.",
+      "Streamlined core engineering processes by optimizing system architecture and implementing strict code quality standards, reducing system latency by 15% and boosting cross-functional productivity for a 5-person engineering team.",
+    ],
+  },
   {
     title: "AI/ML Executive Member",
     job: "ELabs (Electronics Labs), KIIT",
