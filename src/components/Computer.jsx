@@ -8,7 +8,7 @@ const BASE_URL = import.meta.env.BASE_URL;
 
 export function Computer(props) {
     const group = useRef()
-  const { nodes, materials, animations } = useGLTF(`${BASE_URL}models/retro_computer__low-poly__blockbench (1).glb`)
+  const { nodes, materials, animations } = useGLTF(`${BASE_URL}models/retro-computer.glb`)
   const { actions } = useAnimations(animations, group)
 
   // Get target Y from props or default
@@ -86,4 +86,4 @@ export function Computer(props) {
   )
 }
 
-useGLTF.preload(`${import.meta.env.BASE_URL}models/retro_computer__low-poly__blockbench (1).glb`)
+useGLTF.preload(`${import.meta.env.BASE_URL}models/retro-computer.glb`)

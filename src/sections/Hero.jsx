@@ -10,7 +10,7 @@ import Loader from "../components/Loader"
 const Hero = () => {
   const isMobile = useMediaQuery({maxWidth: 853})
   return (
-    <section className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space">
+    <section id="home" className="flex items-start justify-center md:items-start md:justify-start min-h-screen overflow-hidden c-space">
         <HeroText/>
         <ParallaxBackground/>
         <figure
@@ -24,7 +24,7 @@ const Hero = () => {
               <Float speed={1} rotationIntensity={0.5} floatIntensity={0.0}>
                 <Computer 
                 scale={isMobile ? 4 : 5} 
-                position={isMobile ? [0, -2.0, 0] : [2.5, -1.5, 0]}/>
+                position={isMobile ? [0, -2.8, 0] : [2.5, -1.5, 0]}/>
               </Float>
             </Suspense>
           </Canvas>

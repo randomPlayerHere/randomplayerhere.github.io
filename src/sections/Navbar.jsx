@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { motion } from "motion/react"
+import { RESUME_URL } from '../constants'
 
 const BASE_URL = import.meta.env.BASE_URL;
 
@@ -13,10 +14,16 @@ function Navigation(){
                 <a className='nav-link' href = "#about">About</a>
             </li>
             <li className='nav-li'>
-                <a className='nav-link' href = "#work">Work</a>
+                <a className='nav-link' href = "#work">Projects</a>
+            </li>
+            <li className='nav-li'>
+                <a className='nav-link' href = "#experience">Experience</a>
             </li>
             <li className='nav-li'>
                 <a className='nav-link' href = "#contact">Contact</a>
+            </li>
+            <li className='nav-li'>
+                <a className='nav-link text-coral' href={RESUME_URL} target="_blank" rel="noreferrer">Resume ↗</a>
             </li>
         </ul>
     )
@@ -33,7 +40,7 @@ const Navbar = () => {
                     Khushal Nirwal
                 </a>
                 <button onClick={() => setIsOpen(!isOpen)} className="flex cursor-pointer text-text-muted hover:text-terminal focus:outline-none sm:hidden transition-colors">
-                    <img src={isOpen? `${BASE_URL}og_assets/close.svg`:`${BASE_URL}og_assets/menu.svg`} className="w-6 h-6" alt="toggle"/>
+                    <img src={isOpen? `${BASE_URL}assets/icons/close.svg`:`${BASE_URL}assets/icons/menu.svg`} className="w-6 h-6" alt="toggle"/>
                 </button>
                 <nav className="hidden sm:flex">
                     <Navigation/>

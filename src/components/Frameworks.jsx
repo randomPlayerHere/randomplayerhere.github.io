@@ -5,19 +5,21 @@ const BASE_URL = import.meta.env.BASE_URL;
 export function Frameworks() {
   const skills = [
     "PyTorch",
-    "Arch Linux",
-    "Kaggle",
-    "FastAPI",
-    "Anaconda",
-    "OpenCV",
+    "TensorFlow",
+    "HuggingFace",
     "scikit-learn",
-    "Python",
     "Keras",
-    "Pandas",
+    "Python",
+    "FastAPI",
+    "Docker",
+    "AWS",
+    "PostgreSQL",
     "NumPy",
+    "Pandas",
+    "Arch Linux",
     "Java",
-    "C++",
-];
+    "Kaggle",
+  ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
       <OrbitingCircles iconSize={40}>
@@ -26,7 +28,7 @@ export function Frameworks() {
         ))}
       </OrbitingCircles>
       <OrbitingCircles iconSize={25} radius={100} reverse speed={2}>
-        {skills.reverse().map((skill, index) => (
+        {[...skills].reverse().map((skill, index) => (
           <Icon key={index} src={`${BASE_URL}assets/logos/${skill}.svg`} />
         ))}
       </OrbitingCircles>

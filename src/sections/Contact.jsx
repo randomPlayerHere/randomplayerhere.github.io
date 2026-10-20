@@ -16,7 +16,6 @@ const Contact = () => {
         e.preventDefault()
         setIsLoading(true)
         try{
-            console.log("Form Data:", formData)
             await emailjs.send("service_c69ec3t","template_naldmnr",{
             from_name: formData.name,
             from_email: formData.email,
